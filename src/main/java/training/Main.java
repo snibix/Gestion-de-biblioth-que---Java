@@ -17,7 +17,8 @@ public class Main {
     System.out.println("5 - Quitter");
 
     int choix = sc.nextInt();
-
+    sc.nextLine();
+    
     switch (choix) {
         case 1:
         System.out.println("Le titre du livre");
@@ -29,7 +30,7 @@ public class Main {
         System.out.println("L'année du livre");
         int year = sc.nextInt();
         sc.nextLine();
-        
+
         System.out.println("L'ISBN du livre");
         String isbn = sc.nextLine();
 
