@@ -11,7 +11,7 @@ Ce projet a été conçu pour pratiquer la programmation orientée objet, les co
 * ❌ Supprimer un livre via son **ISBN**
 * 🔎 Rechercher un livre par **titre**, **auteur**
 * 📖 Afficher tous les livres disponibles dans la bibliothèque
-* 🔄 Mettre à jour l’état d’un livre (**disponible** / **emprunté**)
+* ✅ Vérifier si un livre est disponible
 
 ---
 
@@ -56,7 +56,8 @@ Ce projet a été conçu pour pratiquer la programmation orientée objet, les co
 2 - Supprimer un livre
 3 - Rechercher un livre
 4 - Voir tous les livres
-5 - Quitter
+5 - Vérifier la disponibilité d'un livre
+6 - Quitter
 ```
 
 👉 L’utilisateur choisit une option, saisit les informations demandées, et l’application exécute l’action correspondante.
