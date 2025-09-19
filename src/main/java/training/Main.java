@@ -14,7 +14,8 @@ public class Main {
     System.out.println("2 - Supprimer un livre");
     System.out.println("3 - Rechercher un livre");
     System.out.println("4 - Voir tous les livres");
-    System.out.println("5 - Quitter");
+    System.out.println("5 - Vérifier la disponibilité d'un livre");
+    System.out.println("6 - Quitter");
 
     int choix = sc.nextInt();
     sc.nextLine();
@@ -55,6 +56,12 @@ public class Main {
             break;
 
         case 5:
+        System.out.println("Entrez le titre pour vérifier s'il est disponible :");
+        String available = sc.nextLine();
+            lib.isAvailable(available);
+            break;
+
+        case 6:
             quitter = true;
             System.out.println("Au revoir !");
             break;

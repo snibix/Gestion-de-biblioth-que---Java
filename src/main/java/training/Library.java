@@ -54,4 +54,21 @@ public void viewAllBooks(){
   }
 }
 
+public boolean isAvailable(String title) {
+  for (Book book : books) {
+      if (book.title.equalsIgnoreCase(title)) {
+          if (book.isAvailable()) {
+              System.out.println("Livre disponible");
+              return true;
+          } else {
+              System.out.println("Livre indisponible");
+              return false;
+          }
+      }
+  }
+  System.out.println("Livre non trouvé");
+  return false;
+}
+
+
 }
